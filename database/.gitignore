@@ -1,1 +1,4 @@
-*.sqlite*
+# Ignore SQLite journal and lock files
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
