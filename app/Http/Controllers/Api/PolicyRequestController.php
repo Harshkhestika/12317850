@@ -86,7 +86,7 @@ class PolicyRequestController extends Controller
                     'age_multiplier' => $pricing['age_multiplier'],
                     'destination_multiplier' => $pricing['destination_multiplier'],
                     'coverage_multiplier' => $pricing['coverage_multiplier'],
-                    'calculated_premium' => $pricing['premium'],
+                    'calculated_premium' => number_format($pricing['premium'], 2, '.', ''),
                 ],
                 'data' => $policy,
             ], 201);

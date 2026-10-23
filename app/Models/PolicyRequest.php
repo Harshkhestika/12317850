@@ -40,6 +40,7 @@ class PolicyRequest extends Model
         ],
         self::STATE_VALIDATED => [
             self::STATE_SUBMITTED,
+            self::STATE_ISSUED,
             self::STATE_FAILED,
         ],
         self::STATE_SUBMITTED => [
